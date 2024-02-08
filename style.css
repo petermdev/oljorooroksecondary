@@ -1,0 +1,232 @@
+*{  padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+.body{
+    background-image: url(images/school-corridor-at-night-with-your-advices-is-it-realistic-v0-4tfwb8hpajcc1.jpg);
+    background-size: cover;
+    background-position: center;
+   
+    font-family: sans-serif;
+  
+   
+}
+.body{
+    
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+.menu-bar{
+    background: rgb(0, 100 ,0);
+    text-align: center;
+    
+
+}
+.menu-bar ul {
+    display:inline-flex;
+    list-style: none;
+    color: white;
+}
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color : white;
+}
+.active, .menu-bar ul li:hover{
+background-color: #2bab0d;
+border-radius: 3px;
+cursor: pointer;
+
+}
+.sub-menu-1{
+    display: none;
+    cursor: pointer;
+
+   
+}
+.menu-bar ul li:hover .sub-menu-1{
+display: block;
+position: absolute;
+background-color: rgb(0, 100 ,0);
+margin-top: 15px;
+margin-left: -15px;
+cursor: pointer;
+
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px; 
+    cursor: pointer;
+    background-color:rgb( 0,100,0);
+
+}
+.sub-menu-1.socials li {
+justify-content: space-between;
+display: flex;
+padding: 2px;
+
+}
+
+
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+    cursor: pointer;
+
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color: #b2ff00;
+
+}
+
+
+.fa-angle-right{
+    float: right;
+}
+.sub-menu-2{
+    display: none;
+
+}
+.hover-me:hover .sub-menu-2{
+    position: absolute;
+    display: block;
+    margin-top:-40px;
+    margin-left: 140px;
+    background: rgba(0,100,0);
+}
+.logo{
+    font-size: 55px;
+    color: white;
+    margin-bottom: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+.home2{
+    display: flex;
+    height: 80vh;
+    align-items: center;
+padding:0 10%;
+
+}
+.home-content{
+
+max-width: 600px;
+
+}
+.home-content h1{
+font-size: 56px;
+font-weight: 700;
+line-height: 1.2;
+
+}
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    color:skyblue;
+}
+.home-content h1{
+    color: #2bab0d;
+}
+.home-content p{
+font-size: 16px;
+color: #fff;
+margin: 20px 0 40px;
+
+
+}
+.home-content .btn-box{
+width: 345px;
+display: flex;
+justify-content: space-between;
+height: 50px;
+
+
+}
+.btn-box a{
+    position: relative;
+    display: inline-flex;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: #2bab0d;
+    border: 2px solid #2bab0d ;
+    border-radius: 8px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 600;
+    z-index: 1;
+    overflow:hidden;
+   transition: .5s;
+
+    font-size: 19px;
+
+}
+.btn-box a:hover{
+    color: #2bab0d;
+
+}
+
+.btn-box a:nth-child(2){
+background: transparent;
+color: #2bab0d;
+
+
+}
+.btn-box a:nth-child(2)::before{
+background: #2bab0d;
+
+}
+.btn-box a:nth-child(2):hover{
+    color: #081b29;
+}
+.btn-box a::before{
+    content: "";
+position: absolute;
+top:0;
+left: 0;
+width: 0;
+height: 100%;
+background: #081b29;
+z-index: -1;
+transition: .5s;
+
+
+}
+.btn-box a:hover::before{
+    width: 100%;
+    
+
+}
+.home-sci{
+    position: absolute;
+    bottom:250px;
+    width: 200px;
+    size: 50px;
+    background:transparent;
+display: inline-flex;
+justify-content: space-between;
+}
+.home-sci a{
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 600px;
+    background: transparent;
+    border: transparent;
+    border-radius: 50%;
+    font-size: 20px;
+    color:white;
+    text-decoration: none;
+    
+    justify-content: first center;
+    align-items: center;
+} 
